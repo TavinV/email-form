@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tavin</title>
+    <title>🚨 Boletim de Ocorrência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header>
+        Registrar Boletim de Ocorrência
+    </header>
+    <main>
 
-    <div class="form-container">
-        <form action="https://formsubmit.co/otavioviniciusads@gmail.com" method="POST">
-            <label>Seu nome</label>
-            <input type="text" name="name" required>
-            <br>
-            <label>Seu email</label>
-            <input type="email" name="email" required>
-            <br>
-            <label>Digite sua mensagem</label>
-            <textarea name="texto" id="" cols="30" rows="10"></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+        <div class="form-container">
+            <h2>Insira seus dados</h2>
+            <form action="https://formsubmit.co/otavioviniciusads@gmail.com" method="POST">
 
+                <div class="inputs">
+                        <input class="inputbox" type="text" name="Nome" required placeholder="Digite seu Nome. *">
+                        <input class="inputbox" type="text" name="Sobrenome" required placeholder="Digite seu Sobrenome. *">
+                        <input class="inputbox" type="email" name="Email" required placeholder="Digite seu Email. *">
+                        <input class="inputbox" type="tel" name="Telefone" required placeholder="Digite seu Telefone. *">
+                        <input class="inputbox" type="text" name="Rua" required placeholder="Informe-nos a sua Rua. *">
+                        <input class="inputbox" type="text" name="Bairro" required placeholder="Informe-nos o seu Bairro. *">
+                        <input class="inputbox" type="text" name="Cidade" required placeholder="Informe-nos a sua Cidade. *">
+                        <input class="inputbox" type="text" name="CEP" required placeholder="Informe-nos o seu CEP. *">
+                
+                </div>
+                <div class="text-area-container">
+                    <textarea class="TextArea" placeholder="Sua ocorrência"></textarea>
+                </div>
+
+                <div class="botao-enviar">
+                    <button class="botao" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+    </main>
 </body>
 </html>
